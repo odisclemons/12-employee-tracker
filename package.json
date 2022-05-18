@@ -1,0 +1,16 @@
+{
+  "name": "12-employee-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Odis Clemons <odis.clemons@gmail.com> (https://odisclemons.com)",
+  "license": "mit",
+  "entrypoint": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3"
+  }
+}
