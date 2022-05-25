@@ -1,8 +1,17 @@
-const Sequelize = require("sequelize");
-const db = require("../config/connection");
+const { Sequelize, Model } = require("sequelize");
+const sequelize = require("../config/connection");
 
-const Department = db.define({
-  name: Sequelize.STRING,
-});
+class Department extends Model {}
+
+Department.init(
+  {
+    name: Sequelize.STRING,
+  },
+  {
+    modelName: "deparment",
+    sequelize,
+    underscored: true,
+  }
+);
 
 module.exports = Department;
