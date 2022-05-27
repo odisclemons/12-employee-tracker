@@ -1,5 +1,7 @@
 const db = require("./config/connection");
 const inq = require("inquirer");
+const cTable = require("console.table");
+const q = require("./helpers");
 
 const questions = [
   {
@@ -14,6 +16,9 @@ const questions = [
   },
 ];
 
-inq.prompt(questions).then((answers) => {
-  console.log(answers);
+inq.prompt(questions).then(async (answers) => {
+  console.log(q.getDeps);
+  let deps = await db.query(q.getDeps);
+  console.log(deps[0]);
+  process.exit();
 });
