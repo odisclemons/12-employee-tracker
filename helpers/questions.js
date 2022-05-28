@@ -7,10 +7,10 @@ const mainLoopQS = [
     name: "choice",
     message: "What would you like to do?",
     choices: [
-      // { name: "View Departments", value: "viewDeps" },
-      // { name: "View Roles", value: "viewRoles" },
-      // { name: "View Employees", value: "viewEmps" },
-      // new inq.Separator(),
+      { name: "View Departments", value: "viewDeps" },
+      { name: "View Roles", value: "viewRoles" },
+      { name: "View Employees", value: "viewEmps" },
+      new inq.Separator(),
       { name: "Add Department", value: "addDept" },
       { name: "Add Role", value: "addRole" },
       { name: "Add Employee", value: "addEmp" },
@@ -27,12 +27,13 @@ const rolesQS = [
     type: "list",
     name: "department_id",
     message: "Department?",
+    choices: [],
   },
 ];
 
 const empQS = [
-  { name: "first_name", message: "First Name" },
-  { name: "last_name", message: "Last Name" },
+  { name: "fName", message: "First Name" },
+  { name: "lName", message: "Last Name" },
   { name: "role_id", message: "Role", type: "list" },
   { name: "manager_id", message: "Manager", type: "list" },
 ];
