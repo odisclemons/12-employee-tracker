@@ -37,6 +37,7 @@ yarn start
 3) Follow the appropriate prompts and fill in the information
 4) The script will loop until you select the "Quit" option
 
+https://user-images.githubusercontent.com/45825566/170844154-bb3dd92e-38b6-4650-bd34-47a07da7fdd9.mp4
 
 
   
