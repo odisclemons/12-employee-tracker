@@ -30,4 +30,11 @@ const rolesQS = [
   },
 ];
 
-module.exports = { rolesQS, mainLoopQS };
+const empQS = [
+  { name: "first_name", message: "First Name" },
+  { name: "last_name", message: "Last Name" },
+  { name: "role_id", message: "Role", type: "list" },
+  { name: "manager_id", message: "Manager", type: "list" },
+];
+
+module.exports = { rolesQS, mainLoopQS, empQS };
