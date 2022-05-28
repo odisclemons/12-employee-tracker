@@ -1,5 +1,3 @@
-const db = require("../config/connection");
-
 const queries = {
   getDeps: "SELECT * FROM departments",
   getRoles: "SELECT * FROM roles",
@@ -11,8 +9,3 @@ const queries = {
 };
 
 module.exports = queries;
-
-/*
-INNER JOIN departments
-ON roles.department_id = departments.id
-*/

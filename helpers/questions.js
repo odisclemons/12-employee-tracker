@@ -1,5 +1,7 @@
-const db = require("../config/connection");
 const inq = require("inquirer");
+
+// these are the questions for each of the inquirer prompts.
+// the empty choices arrays are added dynamically by quereying the database
 
 const mainLoopQS = [
   {
